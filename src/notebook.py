@@ -1,11 +1,15 @@
 # TODO: Agrega el código de las clases del modelo aquí. Borra este comentario al terminar.
-HIGH: str = "HIGH"
-MEDIUM: str = "MEDIUM"
-LOW: str = "LOW"
+from datetime import datetime
+datetime.now()
+
 class Note:
-    def __init__(self, code: str, tittle: str, text: str, importance: str, creation_date: str):
+    HIGH: str = "HIGH"
+    MEDIUM: str = "MEDIUM"
+    LOW: str = "LOW"
+    def __init__(self, code: str, title: str, text: str, importance: str, tags: list[str]):
         self.code = code
-        self.tittle = tittle
+        self.title = title
         self.text = text
         self.importance = importance
-        self.creation_date = creation_date
+        self.creation_date = datetime.now()
+        self.tags = tags
