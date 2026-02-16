@@ -2,7 +2,6 @@
 HIGH: str = "HIGH"
 MEDIUM: str = "MEDIUM"
 LOW: str = "LOW"
-
 class Note:
     def __init__(self, code: str, tittle: str, text: str, importance: str, creation_date: str):
         self.code = code
